@@ -428,7 +428,6 @@ namespace MP3libSharp
 		// IsXingHeader returns true if the supplied frame is an Xing VBR header.
 		public static bool IsXingHeader(MP3Frame frame)
 		{
-
 			// The Xing header begins directly after the side information block. We
 			// also need to allow 4 bytes for the frame header.
 			var size = getSideInfoSize(frame);
