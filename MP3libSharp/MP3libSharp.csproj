@@ -7,7 +7,7 @@
     <Description></Description>
     <Version>1.0.0</Version>
     <PackageProjectUrl></PackageProjectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <PackageLicenseFile></PackageLicenseFile>
   </PropertyGroup>
 
