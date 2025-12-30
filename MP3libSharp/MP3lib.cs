@@ -130,7 +130,6 @@ namespace MP3libSharp
 
 			// Each MP3 frame begins with a 4-byte header.
 			var buffer = new byte[4];
-			var lastByte = new byte[1];
 
 			// Fill the header buffer.
 			var ok = fillBuffer(stream, buffer, 0, buffer.Length);
@@ -207,8 +206,8 @@ namespace MP3libSharp
 				buffer[0] = buffer[1];
 				buffer[1] = buffer[2];
 				buffer[2] = buffer[3];
-				var n = stream.Read(lastByte, 0, lastByte.Length);
-				if (n < 1)
+                var n = stream.Read(buffer, buffer.Length - 1, 1);
+                if (n < 1)
 					return null;
 			}
 		}
